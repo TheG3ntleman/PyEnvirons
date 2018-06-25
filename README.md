@@ -40,3 +40,8 @@ app.add_layer(layer) #Adding the layer to our app
 
 app.run()#Running the app
 ```
+
+## Installation
+```python
+pip install PyEnviron
+```
