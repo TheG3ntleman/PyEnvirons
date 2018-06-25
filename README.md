@@ -10,7 +10,8 @@ To show you how simple PyEnvirons is here is a example.
 
 ```python
 from Core import window #Importing the window class
-screen = window.Window([800, 600], 'testwindow') #Instantiating the window class to make a window, by specifying the size and name of the window
+screen = window.Window([800, 600], 'testwindow') 
+#Instantiating the window class to make a window, by specifying the size and name of the window
 
 from Core import app #Importing an app class for us to inject into the window
 app = app.App(screen) #Instantiating the app class by giving the app our window
@@ -21,7 +22,8 @@ app.run() #running our app
 ### Using sprites, gameobjects and layers
 ```python
 from Core import window #Importing the window class
-screen = window.Window([800, 600], 'testwindow') #Instantiating the window class to make a window, by specifying the size and name of the window
+screen = window.Window([800, 600], 'testwindow') 
+#Instantiating the window class to make a window, by specifying the size and name of the window
 
 
 from Core import app #Importing an app class for us to inject into the window
