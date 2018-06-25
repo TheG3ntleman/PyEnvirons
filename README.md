@@ -42,6 +42,6 @@ app.run()#Running the app
 ```
 
 ## Installation
-```python
+```shell
 pip install PyEnviron
 ```
