@@ -9,7 +9,7 @@ To show you how simple PyEnvirons is here is a example.
 ### Creating a functional window
 
 ```python
-from Core import PyEnviron #Importing PyEnviron library
+import PyEnviron #Importing PyEnviron library
 
 screen = PyEnviron.Window([800, 600], 'testwindow') 
 #Instantiating the window class to make a window, by specifying the size and name of the window
@@ -21,7 +21,7 @@ app.run() #running our app
 
 ### Using sprites, gameobjects and layers
 ```python
-from Core import PyEnviron #Importing the PyEnviron library
+import PyEnviron #Importing the PyEnviron library
 screen = PyEnviron.Window([800, 600], 'testwindow') 
 #Instantiating the window class to make a window, by specifying the size and name of the window
 
