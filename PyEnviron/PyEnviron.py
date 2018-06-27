@@ -1,4 +1,10 @@
 import pygame
+import random
+
+#INBUILT CONTROLLER
+
+def randomrange(x, y):
+    return random.randrange(x, y)
 
 class Window:
 
@@ -80,6 +86,28 @@ class App:
 
             pygame.display.update()
             self.Clock.tick(self.FPS)
+
+class Controller:
+
+    def __init__(self, required_keystrokes):
+        self.required_keystrokes = required_keystrokes
+        self.key_identities = []
+        i = 0
+        for keystroke in self.required_keystrokes:
+            self.key_identities.append(['K_'+keystroke, i])
+            i+=1
+
+    def get_strokes(self):
+        strokes = []
+        for key in self.key_identities:
+            strokes.append(0)
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                for key in self.key_identities:
+                    if event.key == key[0]:
+                        strokes[key[1]] = 1
+
+        return strokes
 
 class Layer:
 
