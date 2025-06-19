@@ -1,6 +1,6 @@
 # PyEnvirons
 
-"PyEnvirons" is a higher level API of pygame to easily design, devolop and debug environments for your unsupervised AI agent. It is under rapid development and features will be added almost every single day.
+"PyEnvirons" is a higher level API of pygame to easily design, devolop and debug environments for your unsupervised AI agent.
 
 ## Usage and examples
 
